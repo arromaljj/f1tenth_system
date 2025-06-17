@@ -119,3 +119,15 @@ On Logitech F-710 joysticks, the LB button is the deadman's switch for teleop, a
 3. Subscribes to:
    - topic described in rpm_input_topic
    - topic described in servo_input_topic
+## Simulation with F1TENTH Gym
+The repository provides a simple example for testing algorithms in the
+[F1TENTH Gym](https://github.com/f1tenth/f1tenth_gym) simulator. After
+cloning and installing the simulator (Python 3.8/3.9 recommended), run
+```
+ros2 launch f1tenth_stack sim_launch.py
+```
+which starts a pure pursuit controller following the path in
+`f1tenth_stack/config/raceline.csv`. The same node can be used on the
+real vehicle by launching `bringup_launch.py` and ensuring `odom` and
+`/drive` topics are correctly mapped.
+
