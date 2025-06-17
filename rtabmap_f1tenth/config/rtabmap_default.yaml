@@ -1,0 +1,12 @@
+rtabmap:
+  ros__parameters:
+    frame_id: base_link
+    subscribe_depth: false
+    subscribe_rgb: true
+    subscribe_scan: true
+    approx_sync: true
+    queue_size: 30
+    imu_topic: /sensors/imu/filtered
+    decimation: 2
+    Vh_strategy: 0
+    Odom/Strategy: 0

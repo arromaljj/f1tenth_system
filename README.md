@@ -119,3 +119,4 @@ On Logitech F-710 joysticks, the LB button is the deadman's switch for teleop, a
 3. Subscribes to:
    - topic described in rpm_input_topic
    - topic described in servo_input_topic
+\n## RTAB-Map Mapping and Localization\nThe `rtabmap_f1tenth` package provides launch files for SLAM and localization using RTAB-Map. Sensor vibrations are mitigated with a simple low-pass filter node for IMU data.\nRun `ros2 launch rtabmap_f1tenth/simulation.launch.py` to start a Gazebo simulation with mapping enabled.
